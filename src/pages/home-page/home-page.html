@@ -1,0 +1,26 @@
+<div class="home-page">
+  <div class="search-section">
+    <div class="input-group mb-3">
+      <input
+        type="text"
+        class="form-control"
+        [value]="searchTerm()"
+        placeholder="Enter country name"
+        (input)="searchTerm.set($any($event.target).value); fetchCountries()"
+      />
+      <button class="btn btn-primary" (click)="fetchCountries()">Load countries</button>
+    </div>
+
+    <ul class="list-group">
+      <li
+        *ngFor="let country of countries()"
+        class="list-group-item list-group-item-action"
+        (click)="goToCountry(country)"
+      >
+        {{ country.name }}
+      </li>
+    </ul>
+  </div>
+
+  <app-random-countries-widget class="mt-3"></app-random-countries-widget>
+</div>

@@ -8,9 +8,8 @@ describe('RandomCountriesWidget', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RandomCountriesWidget]
-    })
-    .compileComponents();
+      imports: [RandomCountriesWidget],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(RandomCountriesWidget);
     component = fixture.componentInstance;

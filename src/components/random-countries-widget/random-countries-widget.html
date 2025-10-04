@@ -3,11 +3,8 @@
   <ul>
     <li *ngFor="let c of countries()" (click)="goToCountry(c)">
       <strong>{{ c.name }}</strong>
-      <span *ngIf="c.nextHoliday">
-        {{ c.nextHoliday.name }} on {{ c.nextHoliday.date }}
-      </span>
+      <span *ngIf="c.nextHoliday"> {{ c.nextHoliday.name }} on {{ c.nextHoliday.date }} </span>
       <span *ngIf="!c.nextHoliday">No upcoming holiday</span>
     </li>
   </ul>
-
 </div>

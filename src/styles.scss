@@ -1,20 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+@use '../src/assets/variables/colors.scss';
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+html {
+  @include mat.theme(
+    (
+      color: (
+        primary: mat.$cyan-palette,
+        tertiary: mat.$orange-palette,
+      ),
+      typography: Roboto,
+      density: 0,
+    )
+  );
+}
+
 body {
-  font-family: 'Inter', sans-serif;
-  background-color: #F3F4F6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: colors.$grey;
   color: #111827;
   margin: 0;
 }
 
-h1, h2 {
-  font-family: 'Montserrat', sans-serif;
-  color: #1E3A8A;
+h1,
+h2 {
+  color: colors.$red;
 }
 
 button {
-  font-family: 'Inter', sans-serif;
-  background-color: #1E3A8A;
-  color: white;
+  background-color: colors.$green;
+  color: colors.$white;
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 6px;
@@ -23,5 +38,5 @@ button {
 }
 
 button:hover {
-  background-color: #F97316;
+  background-color: colors.$dark-green;
 }

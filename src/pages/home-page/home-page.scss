@@ -1,0 +1,21 @@
+@use '../../assets/variables/colors.scss';
+
+.home-page {
+  display: flex;
+  gap: 5rem;
+  padding: 5rem 20rem;
+
+  .search-section {
+    width: 50rem;
+
+    .btn {
+      background-color: colors.$green;
+      border: 1px solid;
+      border-color: colors.$dark-green;
+
+      &:hover {
+        background-color: colors.$dark-green;
+      }
+    }
+  }
+}
