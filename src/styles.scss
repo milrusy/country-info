@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #F3F4F6;
+  color: #111827;
+  margin: 0;
+}
+
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #1E3A8A;
+}
+
+button {
+  font-family: 'Inter', sans-serif;
+  background-color: #1E3A8A;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #F97316;
+}

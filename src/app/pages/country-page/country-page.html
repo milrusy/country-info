@@ -1,0 +1,19 @@
+<div class="country-page">
+  <h2>Holidays in {{ countryName }}</h2>
+
+  <div class="year-buttons">
+    <button
+      *ngFor="let year of years"
+      (click)="onYearSelect(year)"
+      [class.active]="year === selectedYear()">
+      {{ year }}
+    </button>
+  </div>
+
+  <ul>
+    <li *ngFor="let h of holidays()">
+      <strong>{{ h.localName }}</strong> - {{ h.date }} ({{ h.types }})
+    </li>
+    <li *ngIf="holidays()?.length === 0">No holidays for this year</li>
+  </ul>
+</div>
