@@ -51,6 +51,14 @@ PUBLIC_HOLIDAYS_BY_YEAR_URL=https://date.nager.at/api/v3/PublicHolidays/{year}/{
 
 The .env file is loaded automatically before the build.
 
+## Packages
+
+To install required packages, run:
+
+```bash
+npm install
+```
+
 ## Development server
 
 To start a local development server, run:
